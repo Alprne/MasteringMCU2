@@ -79,8 +79,8 @@ void SystemClock_Config_HSE(uint8_t clock_freq)
 
 	Osc_Init.OscillatorType = RCC_OSCILLATORTYPE_HSE ;
 	Osc_Init.HSEState = RCC_HSE_ON;
-	//Osc_Init.LSEState = RCC_LSE_ON;
-	//Osc_Init.HSIState = RCC_HSI_ON;
+	Osc_Init.LSEState = RCC_LSE_ON;
+	Osc_Init.HSIState = RCC_HSI_ON;
 	Osc_Init.PLL.PLLState = RCC_PLL_ON;
 	Osc_Init.PLL.PLLSource = RCC_PLLSOURCE_HSE;
 
